@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loader Preview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .loader-cube {
+      width: 60px;
+      height: 60px;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: loaderSpin 3s linear infinite; /* Slowed down */
+    }
+
+    .loader-cube .face {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: rgba(0, 255, 255, 0.15);
+      border: 2px solid #0ff;
+      box-shadow: 0 0 10px #0ff;
+    }
+
+    .loader-cube .front  { transform: translateZ(30px); }
+    .loader-cube .back   { transform: rotateY(180deg) translateZ(30px); }
+    .loader-cube .right  { transform: rotateY(90deg) translateZ(30px); }
+    .loader-cube .left   { transform: rotateY(-90deg) translateZ(30px); }
+    .loader-cube .top    { transform: rotateX(90deg) translateZ(30px); }
+    .loader-cube .bottom { transform: rotateX(-90deg) translateZ(30px); }
+
+    @keyframes loaderSpin {
+      0%   { transform: rotateX(0deg) rotateY(0deg); }
+      100% { transform: rotateX(360deg) rotateY(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-cube">
+    <div class="face front"></div>
+    <div class="face back"></div>
+    <div class="face right"></div>
+    <div class="face left"></div>
+    <div class="face top"></div>
+    <div class="face bottom"></div>
+  </div>
+</body>
+</html>

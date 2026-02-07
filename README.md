@@ -1,13 +1,13 @@
-# 🌀 Rotating 3D Cube Loader
+# Rotating 3D Cube Loader
 
 A pure HTML/CSS animated cube loader using 3D transforms.
 
-## 🔧 Usage
+## Usage
 
 1. Open `RotatingCube.html` in your browser.
 2. Copy the HTML/CSS into your project wherever you need a loading animation.
 
-## 💡 Customization
+## Customization
 
 | Property | Description                | How to change                  |
 |----------|----------------------------|--------------------------------|
@@ -15,13 +15,13 @@ A pure HTML/CSS animated cube loader using 3D transforms.
 | Speed    | Rotation animation speed   | `animation: loaderSpin 3s ...` |
 | Color    | Glow and border color      | `.face { background/border }`  |
 
-## 📄 File
+## File
 
-📄 RotatingCube.html
+  RotatingCube.html
 
 
 Everything is self-contained — no external JS, CSS, or assets required.
 
-## 🧪 Browser Support
+## Browser Support
 
 Works in all modern browsers with proper CSS3 support.
